@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    background-color: rgba(160, 160, 158, 0.397);
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column; /* apila verticalmente */
+    align-items: center;    /* centra el contenido */
+    margin: auto;
+    margin-top: 3%;
+    padding: 5% 10%;
+    max-width: 1440px;       /* define un ancho máximo */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2rem;
+}
+
+#form {
+    width: 100%;            /* ocupa todo el ancho del contenedor */
+    display: flex;
+    flex-wrap: wrap;        /* permite que los elementos bajen si no caben */
+    gap: 10px;
+    background-color: white;
+    border: 1px solid white;
+    padding: 2rem 0;
+    margin: 5px auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#salidas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;            /* igual ancho que el formulario */
+    box-sizing: border-box;
+}
+
+#entradaTarea {
+    flex: 1;               /* 🔥 ocupa todo el espacio restante */
+    height: 1.9rem;
+    min-width: 0;          /* evita que el flex crezca demasiado */
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+
+#entradaTarea:hover {
+    border: 1px solid rgb(2, 201, 236);
+}
+
+#submit {
+    height: 2.23rem;
+    width: auto;           /* permite que se ajuste según el texto */
+    padding: 0 1rem;
+    background-color: #3a955e;
+    border: 1px solid rgb(170, 135, 135);
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    margin-right: 10%;
+}
+
+#submit:hover {
+    background-color: #0cd65d;
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    padding: 1rem 0;
+    margin: 5px auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+span {
+    flex: 1;
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.divBotones{
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+
+.editBtn {
+    background-color: rgba(0, 119, 255, 0.705);
+    color: white;
+    padding: 5px;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.editBtn:hover {
+    background-color: rgba(0, 119, 255, 0.945);
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background-color: rgba(207, 50, 2, 0.829);
+    color: white;
+    padding: 5px;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.deleteBtn:hover {
+    background-color: rgba(243, 57, 1, 0.973);
+    cursor: pointer;
+}
